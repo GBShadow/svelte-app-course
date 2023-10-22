@@ -1,3 +1,41 @@
+/* Pink Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme='light'],
+:root:not([data-theme='dark']) {
+	--primary: #7159c1;
+	--primary-hover: #c2185b;
+	--primary-focus: rgba(113, 89, 193, 0.125);
+	--primary-inverse: #fff;
+}
+
+/* Pink Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+	:root:not([data-theme]) {
+		--primary: #7159c1;
+		--primary-hover: #806ac8;
+		--primary-focus: rgba(113, 89, 193, 0.25);
+		--primary-inverse: #fff;
+	}
+}
+
+/* Pink Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme='dark'] {
+	--primary: #7159c1;
+	--primary-hover: #806ac8;
+	--primary-focus: rgba(113, 89, 193, 0.25);
+	--primary-inverse: #fff;
+}
+
+/* Pink (Common styles) */
+:root {
+	--form-element-active-border-color: var(--primary);
+	--form-element-focus-color: var(--primary-focus);
+	--switch-color: var(--primary-inverse);
+	--switch-checked-background-color: var(--primary);
+}
+
 body {
 	padding: 2rem;
 }

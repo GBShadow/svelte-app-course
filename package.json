@@ -32,6 +32,10 @@
 		"seed": "npx vite-node prisma/seed.ts"
 	},
 	"dependencies": {
-		"@prisma/client": "^5.4.2"
+		"@picocss/pico": "^1.5.10",
+		"@prisma/client": "^5.4.2",
+		"iconify-icon": "^1.0.8",
+		"zod": "^3.22.4",
+		"zod-form-data": "^2.0.2"
 	}
 }

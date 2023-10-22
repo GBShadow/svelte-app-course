@@ -21,3 +21,12 @@ model Post {
   createdAt DateTime @default(now())
   updateAt  DateTime @updatedAt
 }
+
+model Todo {
+  id Int @id @default(autoincrement())
+
+  content String
+
+  createdAt DateTime @default(now())
+  updateAt  DateTime @updatedAt
+}
